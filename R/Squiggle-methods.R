@@ -46,6 +46,11 @@ setMethod("meta", signature(object = "Squiggle"), function(object) {
 })
 
 
+#' Plot nanopore signal
+#'
+#' @param object the Squiggle object to plot
+#' @param time_span the time span in seconds to plot (default: c(0, 0.5))
+#'
 #' @export
 setGeneric("plot_squiggle", function(object, time_span = c(0, 0.5)) {
     standardGeneric("plot_squiggle")
