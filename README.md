@@ -37,3 +37,4 @@ meta(squiggle)        # metadata used to transform signal
 ## See Also
 * [NanoR](https://github.com/davidebolo1993/NanoR) - A user-friendly R package to analyze and compare nanopore sequencing data.
 * [poRe](https://sourceforge.net/projects/rpore/files/) - An R package to enable visualisation of nanopore sequencing data
+* [A Look at the Nanopore fast5 Format](https://medium.com/@shiansu/a-look-at-the-nanopore-fast5-format-f711999e2ff6) - My blog article on exploring the fast5 format
