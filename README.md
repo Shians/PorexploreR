@@ -1,6 +1,7 @@
 # PorexploreR
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/Shians/PorexploreR.svg?branch=master)](https://travis-ci.org/Shians/PorexploreR)
 <!-- badges: end -->
 
 PorexploreR is a package for exploring raw Nanopore sequencing signals.
@@ -33,5 +34,6 @@ raw_signal(squiggle)  # signal as stored in fast5 file
 signal(squiggle)      # signal transformed to pA scale
 meta(squiggle)        # metadata used to transform signal
 ```
-
-
+## See Also
+* [NanoR](https://github.com/davidebolo1993/NanoR) - A user-friendly R package to analyze and compare nanopore sequencing data.
+* [poRe](https://sourceforge.net/projects/rpore/files/) - An R package to enable visualisation of nanopore sequencing data
