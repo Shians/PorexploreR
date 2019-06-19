@@ -8,7 +8,7 @@ PorexploreR is a package for exploring raw Nanopore sequencing signals.
 
 ## Installation
 
-You can install the released version of PorexploreR from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of PorexploreR from GitHub with:
 
 ``` r
 if (!require(remotes)) install.packaages("remotes")
