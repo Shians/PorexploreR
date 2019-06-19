@@ -5,12 +5,15 @@ Version: 0.0.1
 Author: Who wrote it
 Maintainer: Shian Su <su.s@wehi.edu.au>
 Description: Explore nanopore sequencing signals
-Depends: methods
+Depends:
 Imports:
     rhdf5,
+    dplyr,
+    purrr,
     ggplot2,
     tibble,
-    magrittr
+    magrittr,
+    fs
 biocViews: Software
 License: Apache License (>= 2.0)
 Encoding: UTF-8

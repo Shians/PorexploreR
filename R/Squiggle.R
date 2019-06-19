@@ -1,6 +1,11 @@
+#' @importFrom rhdf5 h5read
+NULL
+
 #' Squiggle
 #'
 #' This class is the representation of a "squiggle" from nanopore sequencing.
+#'
+#' @param object the Squiggle object
 #'
 #' @slot raw_signal integer. Represents the raw signal values.
 #' @slot signal numeric (optional). Represents the transformed signal values.

@@ -1,4 +1,6 @@
 #' @include Fast5Files.R
+#' @importFrom dplyr sample_n
+NULL
 
 setMethod("show", signature = "Fast5Files",
 function(object) {

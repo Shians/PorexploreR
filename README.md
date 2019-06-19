@@ -21,7 +21,7 @@ remotes::install_github("shians/PorexploreR")
 library(PorexploreR)
 
 # get example file from package
-fast5_file <- system.file("data/NA12878_short_read2.fast5", package = "PorexploreR")
+fast5_file <- system.file("extdata/NA12878_short_read2.fast5", package = "PorexploreR")
 
 # load in the squiggle
 squiggle <- Squiggle(fast5_file)

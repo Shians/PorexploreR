@@ -14,6 +14,9 @@ signal(object)
 
 meta(object)
 }
+\arguments{
+\item{object}{the Squiggle object}
+}
 \description{
 This class is the representation of a "squiggle" from nanopore sequencing.
 }

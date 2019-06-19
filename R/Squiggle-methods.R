@@ -1,4 +1,8 @@
 #' @include Squiggle.R
+#' @import ggplot2
+#' @importFrom tibble tibble
+#' @importFrom dplyr filter
+NULL
 
 #' @rdname Squiggle-class
 #' @export
@@ -13,6 +17,7 @@ setMethod("raw_signal", signature(object = "Squiggle"), function(object) {
 
 
 #' @rdname Squiggle-class
+#'
 #' @export
 setGeneric("signal", function(object) {
     standardGeneric("signal")
@@ -29,6 +34,7 @@ setMethod("signal", signature(object = "Squiggle"), function(object) {
 
 
 #' @rdname Squiggle-class
+#'
 #' @export
 setGeneric("meta", function(object) {
     standardGeneric("meta")

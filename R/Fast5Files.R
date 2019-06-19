@@ -1,3 +1,7 @@
+#' @importFrom fs path_file
+#' @importFrom purrr map_chr
+NULL
+
 setOldClass("data.frame")
 setClass(
     "Fast5Files",
