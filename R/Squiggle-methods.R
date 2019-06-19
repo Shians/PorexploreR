@@ -10,6 +10,12 @@ setGeneric("raw_signal", function(object) {
     standardGeneric("raw_signal")
 })
 
+#' Extract raw signal
+#'
+#' @param object the Squiggle object
+#'
+#' @return numeric vector of raw signal values
+#'
 #' @export
 setMethod("raw_signal", signature(object = "Squiggle"), function(object) {
     object@raw_signal
@@ -23,6 +29,12 @@ setGeneric("signal", function(object) {
     standardGeneric("signal")
 })
 
+
+#' Extract signal
+#'
+#' @param object the Squiggle object
+#'
+#' @return numeric vector of signal values transformed to pA scale
 #' @export
 setMethod("signal", signature(object = "Squiggle"), function(object) {
     if (length(object@signal) != 0) {
@@ -40,6 +52,11 @@ setGeneric("meta", function(object) {
     standardGeneric("meta")
 })
 
+#' Extract signal metadata
+#'
+#' @param object the Squiggle object
+#'
+#' @return list containing various metadata for transforming the signal to pA scale
 #' @export
 setMethod("meta", signature(object = "Squiggle"), function(object) {
     list(
@@ -91,11 +108,15 @@ setGeneric("plot_squiggle", function(object, time_span = c(0, 0.5)) {
         ggplot2::ylab("current (pA)")
 }
 
+#' @describeIn plot_squiggle
+#'
 #' @export
 setMethod("plot_squiggle", c(object = "Squiggle", time_span = "numeric"),
     .plot_squiggle
 )
 
+#' @describeIn plot_squiggle
+#'
 #' @export
 setMethod("plot_squiggle", c(object = "Squiggle", time_span = "missing"),
     .plot_squiggle
