@@ -19,7 +19,7 @@ remotes::install_github("shians/PorexploreR")
 ``` r
 library(PorexploreR)
 
-fast5_file <- system.file("data/NA12878_short_read1.fast5", package = "PorexploreR")
+fast5_file <- system.file("data/NA12878_short_read2.fast5", package = "PorexploreR")
 
 squiggle <- Squiggle(fast5_file)
 plot_squiggle(squiggle)
