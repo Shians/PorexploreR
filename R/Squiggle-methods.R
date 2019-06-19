@@ -87,7 +87,7 @@ setGeneric("plot_squiggle", function(object, time_span = c(0, 0.5)) {
         time = seq_along(signal) / meta$sampling_rate,
         signal = signal
     ) %>%
-        dplyr::filter(time > time_span[1] & time < time_span[2])
+        dplyr::filter(.data$time > time_span[1] & .data$time < time_span[2])
 
     ylim_offset <- 0.05 * (max(plot_data$signal) - min(plot_data$signal))
     ylim_expanded <- c(
@@ -96,7 +96,7 @@ setGeneric("plot_squiggle", function(object, time_span = c(0, 0.5)) {
     )
 
     plot_data %>%
-        ggplot2::ggplot(ggplot2::aes(x = time, y = signal)) +
+        ggplot2::ggplot(ggplot2::aes_string(x = "time", y = "signal")) +
         ggplot2::geom_step() +
         ggplot2::coord_cartesian(
             ylim = ylim_expanded,

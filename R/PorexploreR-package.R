@@ -6,5 +6,7 @@
 #'
 #' @author Shian Su <\url{https://www.github.com/shians}>
 #' @seealso The core function in this package is \code{\link{Squiggle}}
+#' @import methods
 #' @importFrom magrittr %>%
+#' @importFrom rlang .data
 NULL

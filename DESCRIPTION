@@ -2,17 +2,20 @@ Package: PorexploreR
 Type: Package
 Title: Explore Nanopore Sequencing Signals
 Version: 0.0.1
-Author: Who wrote it
+Author: Shian Su
 Maintainer: Shian Su <su.s@wehi.edu.au>
-Description: Explore nanopore sequencing signals
+Description: This package provides an interface for reading nanopore sequencing
+    signals or "squiggles" from fast5 files.
 Depends:
 Imports:
+    methods,
     rhdf5,
     dplyr,
     purrr,
     ggplot2,
     tibble,
     magrittr,
+    rlang,
     fs
 biocViews: Software
 License: Apache License (>= 2.0)
