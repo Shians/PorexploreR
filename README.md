@@ -19,10 +19,19 @@ remotes::install_github("shians/PorexploreR")
 ``` r
 library(PorexploreR)
 
+# get example file from package
 fast5_file <- system.file("data/NA12878_short_read2.fast5", package = "PorexploreR")
 
+# load in the squiggle
 squiggle <- Squiggle(fast5_file)
+
+# plot the squiggle
 plot_squiggle(squiggle)
+
+# some other information obtainable
+raw_signal(squiggle)  # signal as stored in fast5 file
+signal(squiggle)      # signal transformed to pA scale
+meta(squiggle)        # metadata used to transform signal
 ```
 
 
